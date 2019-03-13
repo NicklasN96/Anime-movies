@@ -1,0 +1,29 @@
+<header>
+  <h1>Anime Movies</h1>
+
+</header>
+
+<body>
+
+  <button>Add movie</button>
+ <br><br>
+ <button>Sort list</button>
+<div class="grid grid-pad" *ngFor="let movie of movies">
+  
+<ul>
+Id: {{movie.id}} <br>
+Title: {{movie.title}} <br>
+Description: {{movie.description}}<br>
+Direktor: {{movie.director}}<br>
+Producer: {{movie.producer}}<br>
+Release date: {{movie.release_date}}<br>
+Rating: {{movie.rt_score}}<br>
+<button class="btn btn-primary" routerLink="/movie-details/{{movie.id}}">Details</button>
+</ul>
+
+</div>
+      
+      
+    
+</body>
+
