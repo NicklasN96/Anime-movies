@@ -8,18 +8,18 @@
   <button>Add movie</button>
  <br><br>
  <button>Sort list</button>
-<div class="grid grid-pad" *ngFor="let movie of movies">
+<div id="mo" class="box" *ngFor="let movie of movies">
   
-<ul>
+<span id="md">
 Id: {{movie.id}} <br>
 Title: {{movie.title}} <br>
 Description: {{movie.description}}<br>
 Direktor: {{movie.director}}<br>
 Producer: {{movie.producer}}<br>
 Release date: {{movie.release_date}}<br>
-Rating: {{movie.rt_score}}<br>
-<button class="btn btn-primary" routerLink="/movie-details/{{movie.id}}">Details</button>
-</ul>
+Rating: {{movie.rt_score}}<br><br>
+<button id="detailsbtn" class="btn btn-primary" routerLink="/movie-details/{{movie.id}}">Details</button>
+</span>
 
 </div>
       
