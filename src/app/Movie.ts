@@ -1,7 +1,7 @@
 export class Movie {
 //movie variables
     id: string;
-    title:string;
+    name:string;
     description:string;
     director:string;
     producer:string;

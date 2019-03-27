@@ -1,27 +1,31 @@
-<header>
+<header class="header">
   <h1>Anime Movies</h1>
-
 </header>
 
 <body>
-<div class="buttons">
-  <button class="addMovie">Add movie</button>
-  <br><br>
-  <button class="sortbutton">Sort list</button>
-</div>
-<div class="grid grid-pad" *ngFor="let movie of movies">
-  
-<ul>
-Title: {{movie.title}} <br>
-Description: {{movie.description}}<br>
-Release date: {{movie.release_date}}<br>
-Rating: {{movie.rt_score}}<br>
- <button class="btn btn-primary" (click)="viewMovie()">Details</button>
-</ul>
 
-</div>
+  <div class="buttons">
+
+    <button class="addMovie">Add movie</button>
+    <br><br>
+    <button class="sortbutton">Sort list</button>
+
+  </div>
+
+  
+  <div class="grid grid-pad" *ngFor="let movie of movies">
+  
+    <ul class="movieFont">
+
+      <strong class="title">Title:</strong> {{movie.title}} <br>
+      <strong>Description:</strong> {{movie.description}}<br>
+      <strong>Release date:</strong> {{movie.release_date}}<br>
+      <strong>Rating:</strong> {{movie.rt_score}}<br>
+      <button class="btn btn-primary" (click)="viewMovie()">Details</button>
+
+    </ul>
+
+  </div>
       
-      
-    
 </body>
 

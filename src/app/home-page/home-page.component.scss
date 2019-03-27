@@ -1,11 +1,12 @@
 header {
-    text-align: center
+    text-align: center;
+    background-color: pink;
 }
 
 body {
     font-size: 17px;
     background-image: url("https://otakukart.com/animeblog/wp-content/uploads/2017/12/best-anime-movies.png");
-    background-color: #cccccc
+    background-color: #cccccc;
 }
     
 div {
@@ -15,7 +16,7 @@ div {
     margin: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #cccccc
+    background-color: #cccccc;
   }
 
 button.addMovie {
@@ -24,5 +25,6 @@ button.addMovie {
  }
 
 button.sortbutton {
-      margin-left: 50px;
+      margin-inline-start: 500px;
  }
+

@@ -44,16 +44,15 @@ export class HomePageComponent implements OnInit {
   //     }
   // ]
   movies:any;
-  data:Movie
   
   
   constructor(private router: Router, private http: HttpClient) { }
 
   
   ngOnInit() {
-    let obs = this.http.get('https://ghibliapi.herokuapp.com/films/');
-    obs.subscribe((response)=> {
+    this.http.get('https://ghibliapi.herokuapp.com/films/').subscribe((response)=> {
       this.movies = response;
+      console.log(this.movies)
     })
   }
 
