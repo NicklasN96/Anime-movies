@@ -7,5 +7,4 @@ export class Movie {
     producer:string;
     release_date:number;
     rt_score: number;
-    rt:number;
 }
