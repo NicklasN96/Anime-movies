@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Movie } from '../Movie';
+import { Params, ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   selector: 'app-movie-details',
@@ -8,12 +9,17 @@ import { Movie } from '../Movie';
 })
 export class MovieDetailsComponent implements OnInit {
   
-   
+   private selectedMovie: any;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
+    this.selectedMovie = this.route.snapshot.paramMap.get('id')
   }
    
+  viewMovie() {
+    this.router.navigate(["/movie-details/{{movie.id}}"])
+
+  }
     
 }
